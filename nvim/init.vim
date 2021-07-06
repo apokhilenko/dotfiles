@@ -18,6 +18,7 @@ Plug 'junegunn/fzf.vim'
 "Plug 'airblade/vim-rooter'
 "Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
+Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 
@@ -68,7 +69,6 @@ highlight Comment cterm=italic gui=italic
 
 " coc config
 let g:coc_global_extensions = [
-  \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
@@ -195,3 +195,6 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>l
 nnoremap <silent> <C-f>  :<C-u>CocCommand eslint.executeAutofix<CR>
+
+nmap <leader>p :Rg<CR>
+nmap <leader>f :Files<CR>
